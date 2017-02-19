@@ -34,7 +34,7 @@ public class StopWatch extends AppCompatActivity implements Chronometer.OnChrono
     @Override
     public void onChronometerTick(Chronometer chronometer) {
         currentTime = (SystemClock.elapsedRealtime() - chronometer.getBase()) / 1000;
-        if(currentTime < 10) {
+        if(currentTime < 30) {
             if (i % 2 == 0) {
                 ((ImageView) findViewById(R.id.iv)).setImageResource(R.drawable.cat1);
             } else {
